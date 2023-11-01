@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 2500px;
+    background-color:rgb(204, 213, 174);
+}
+.header-body{
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    overflow: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.namer-p{
+    position: absolute;
+    top: 7px;
+    right: 175px;
+    background-color: gray;
+    width: 18   px;
+    height: 18  px;
+    border-radius: 50%;
+}
+.img1{
+    width: 15%;
+    height: 100px;
+    float: left;
+}
+.nav-header{
+    margin-top: 20px;
+    line-height: 30px;
+    position: relative;
+}
+.nav-header .nav-link{
+    list-style-type: none;
+    margin: auto;
+}
+.nav-header .nav-link li{
+    display: inline;
+    padding: 0px 5px;
+}
+.nav-header .nav-link li a{
+    text-decoration: none;
+    color: rgb(7, 7, 7);
+    padding: 9px 15px;
+    position: relative;
+}
+.nav-link a::after{
+    position: absolute;
+    content: "";
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border: 2px solid rgb(14, 14, 14);
+    transform: scaleY(0);
+}
+.nav-link a:hover::after{
+    transform: scaleY(1);
+}
+.nav-header .nav-link .amd{
+    position: relative;
+}
+.nav-link .amd .nav-tablle{
+    position: absolute;
+    transform: scale(0);
+    visibility: hidden;
+    top: -40px;
+    left: 15px;
+    z-index: 15;
+}
+.nav-link .amd:hover .nav-tablle{
+    visibility: visible;
+    transform: scale(1);
+}
+.nav-tablle tr td{
+    padding: 2px 8px;
+    color: rgb(113, 111, 111);
+}
+.div-img{
+    width:80%;
+    margin: auto;
+    position: relative;
+}
+.div-img .img-log{
+    width: 100%;
+    height: 500px;
+    background-image: url(../imges/pexels-huseyn-kamaladdin-667838.jpg);
+    background-size: cover;
+    margin-bottom: 30px;
+}
+/* //////////////////////////////////////////// */
+.titel-header-namer1{
+    color: rgb(99, 100, 100);
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.span-header-namer1{
+    background-color: blue;
+    width: 50px;
+    height: 3px;
+    display: inline-block;
+    margin-left: 730px;
+    margin-bottom: 25px;
+    transform: scale(1);
+    transition: 0.2s;
+}
+.span-header-namer1:hover{
+    transform: scaleX(2.5);
+}
+/* ////////////////////////////////////////// */
+.content-namer1{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.office-forms{
+    display: flex;
+    margin-left: 70px;
+}
+.item-namer1{
+    width: 25%;
+    position: relative;
+    font-size: 18px;
+    background: rgb(255, 227, 227);
+}
+.aa{margin: 0px 5px;}
+.item-namer1 img{
+    width: 80%;
+    margin: 20px 23px ;
+    margin-bottom: 5px;
+}
+.wwq{
+    background: rgb(255, 255, 255);
+}
+.item-namer1 .icon {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(171, 169, 169);
+    color: #fff;
+    text-align: center;
+    display: block;
+    line-height: 30px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition:0.5s;
+}
+.item-namer1:hover .icon{
+    visibility: inherit;
+    opacity: 0.7;
+}
+/* ////////////////////////////////////////////////////////////////////// */
+.namer2{
+    width: 80%;
+    margin: auto;
+}
+.content-namer2{
+    display: flex;
+    font-family: inherit;
+    margin-bottom: 50px;
+}
+.item-namer2{
+    width: 50%;
+    height: 300px;
+    margin: auto; 
+    font-size:  23px;
+    position: relative;
+    margin-left: 60px;
+}
+.text-namer2{
+    padding-left: 30px;
+    margin-bottom: 15px;
+}
+.p1-namer2{
+    line-height: 1.7;
+}
+.span-lien{
+    text-align: right;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+.info-imges-namer2{
+    background-image: url(../imges/b15f32b5acffdaf1fbb050d6d598343a.jpg);
+    background-size: cover;
+    margin: 0px 15px;
+    padding: 18px 0px;
+    transition: 0.5s;
+    font-size: 20px;
+}
+.info-imges-namer2:hover{
+    transform: scale(1.1, 1.1);
+}
+.span-lien span{
+    background-color: brown;
+    width: 50px;
+    height: 3px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+.content-namer3{
+    width: 80%;
+    margin: auto;
+}
+.contirn{
+    display: flex;
+    margin: auto;
+}
+.ietem-namer3{
+    width: 30%;
+    margin-left: 60px;
+    margin-bottom: 50px;
+}
+.perent ,.front,.back {
+    width: 200px;
+    height: 250px;
+    transition: 1s;
+}
+.back{
+    background-image: url(../imges/a4.jpeg);
+    background-size: cover;
+    transform: rotateY(180deg);
+}
+.perent{
+    position: relative;
+    transition: 1s;
+    transform-style:preserve-3d;
+}
+.front{
+    background-image: url(../imges/a3.jpeg);
+    background-size: cover;
+    z-index: 1;
+    backface-visibility: hidden;
+}
+.front , .back {
+    background-color: blue;
+    position: absolute;
+}
+.perent:hover{
+    transform: rotateY(180deg);
+}
+.back .ul-back a i{
+    font-size: 35px;
+    padding: 100px 15px;
+    color: rgb(247, 244, 243);
+}
+.info i{
+    color: yellow;
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.content-namer4{
+    width: 80%;
+    margin: auto;
+}
+.contirn-namer4{
+    display: flex;
+}
+.ietem-namer4{
+    width: 30%;
+    margin-left: 60px;
+}
+.perent-namer4,.front-namer4, .back-namer4{
+    width: 250px;
+    height: 250px;
+    transition: 1s;
+}
+.back-namer4{
+    background-image: url(../imges/1bba92512b89bb22a1b078b712307c24.jpg);
+    background-size: cover;
+    transform: rotateY(180deg);
+}
+.perent-namer4{
+    position: relative;
+    transition: 1s;
+    transform-style:preserve-3d;
+}
+.front-namer4{
+    background-image: url(../imges/pexels-koshevayak-4170629.jpg);
+    background-size: cover;
+    z-index: 1;
+    backface-visibility: hidden;
+}
+.front-namer4 , .back-namer4 {
+    background-color: blue;
+    position: absolute;
+}
+.perent-namer4:hover{
+    transform: rotateY(180deg);
+}
+.back-namer4 .ul-back a i{
+    font-size: 35px;
+    padding: 100px 15px;
+    color:rosybrown;
+}
+.info-nav i{
+    color: yellow;
+}
+
+
+
+
+
+
+
+
+
